@@ -1,14 +1,14 @@
-#Captain Node
+# Captain Node
 
-####Installation
+## Installation
 
-**Pre-requisites**
+### Pre-requisites
 
 Install Node.js version v10
 
 Install NPM version 6.4.1
 
-**Installation steps**
+### Installation steps
 
 Install 3rd-party packages:
 
