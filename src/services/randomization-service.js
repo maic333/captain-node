@@ -8,7 +8,7 @@ module.exports = class RandomizationService {
       !Array.isArray(range) ||
       range.length !== 2
     ) {
-      throw `RandomizationService.getRandomInRange: 'range' argument is not an array of [min, max]`;
+      throw 'RandomizationService.getRandomInRange: \'range\' argument is not an array of [min, max]';
     }
 
     // get min and max values from range

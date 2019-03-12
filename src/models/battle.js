@@ -1,5 +1,3 @@
-const RandomizationService = require('../services/randomization-service');
-
 module.exports = class Battle {
 
   /**
@@ -65,7 +63,7 @@ module.exports = class Battle {
   fight() {
     console.log('\r\nStart fight!');
 
-    while(
+    while (
       // did not reach the maximum number of turns
       this.turns < this.maxTurns &&
       // character 1 is not dead
@@ -91,7 +89,6 @@ module.exports = class Battle {
     }
 
     // fight finished; who won?
-    let winner;
     if (this.c1.health > this.c2.health) {
       // character 1 wins
       console.log(`${this.c1.name} wins!`);
@@ -100,7 +97,7 @@ module.exports = class Battle {
       console.log(`${this.c2.name} wins!`);
     } else {
       // draw
-      console.log(`It's a draw!`);
+      console.log('It\'s a draw!');
     }
 
     // print characters stats

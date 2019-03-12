@@ -5,8 +5,7 @@
     "start": "node app.js",
     "eslint": "eslint src/"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^5.15.1"
   }

@@ -4,9 +4,9 @@
 
 ### Pre-requisites
 
-Install Node.js version v10
+Install Node.js version v10.x
 
-Install NPM version 6.4.1
+Install NPM version 6.x
 
 ### Installation steps
 
