@@ -25,9 +25,13 @@ module.exports = class CriticalStrikeSkill {
 
     // if super lucky (1% chance), it strikes 3 times
     if (RandomizationService.isLucky(1)) {
+      console.log(`${character.name} uses Critical Strike skill with extra damage`);
+
       // strike 3 times
       return damage * 3;
     } else {
+      console.log(`${character.name} uses Critical Strike skill`);
+
       // strike 2 times
       return damage * 2;
     }

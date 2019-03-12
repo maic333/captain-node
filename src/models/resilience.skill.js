@@ -37,6 +37,8 @@ module.exports = class ResilienceSkill {
       return damage;
     }
 
+    console.log(`${character.name} uses Resilience skill`);
+
     // take half of the damage
     damage = damage / 2;
 

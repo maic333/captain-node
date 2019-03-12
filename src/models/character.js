@@ -47,6 +47,8 @@ module.exports = class Character {
    * @returns {number} damage caused by the attacker
    */
   attack(defender) {
+    console.log(`${this.name} attacks!`);
+
     if (this.strength <= defender.defense) {
       // defender is too strong
       return 0;
@@ -74,6 +76,8 @@ module.exports = class Character {
     // check if character is lucky and can avoid the attack
     if (this.isLucky()) {
       // avoided the attack
+      console.log(`${this.name} avoids the attack`);
+
       return;
     }
 
@@ -87,5 +91,23 @@ module.exports = class Character {
 
     // get hit
     this.health = Math.max(0, (this.health - damage));
+
+    console.log(`${this.name} gets ${damage} damage. Health remaining: ${this.health}`);
+  }
+
+  /**
+   * Print character's stats
+   */
+  printStats() {
+    console.log(`
+  > ${this.name}
+  ---------------------------
+  - Health: ${this.health}
+  - Strength: ${this.strength}
+  - Defense: ${this.defense}
+  - Speed: ${this.speed}
+  - Luck: ${this.luck}
+  ---------------------------`
+    );
   }
 };
