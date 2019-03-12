@@ -2,10 +2,13 @@ const RandomizationService = require('../services/randomization-service');
 const SkillType = require('../typings/skill-type');
 
 module.exports = class CriticalStrikeSkill {
-  // chance to use the skill (number between 0 and 100)
-  chance = 10;
-  // type of skill (attacking or defensive)
-  type = SkillType.ATTACK;
+
+  constructor() {
+    // chance to use the skill (number between 0 and 100)
+    this.chance = 10;
+    // type of skill (attacking or defensive)
+    this.type = SkillType.ATTACK;
+  }
 
   /**
    * Use skill

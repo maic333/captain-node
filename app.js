@@ -6,3 +6,5 @@ const hero = require('./src/characters/hero.character');
 const enemy = require('./src/characters/callback-hell.character');
 
 // #TODO fight
+hero.prepareForFight();
+enemy.prepareForFight();

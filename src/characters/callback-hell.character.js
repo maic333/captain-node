@@ -1,4 +1,4 @@
-const Character = require('./src/models/character');
+const Character = require('../models/character');
 
 // create hero character
 module.exports = new Character(

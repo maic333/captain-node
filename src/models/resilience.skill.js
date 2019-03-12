@@ -2,12 +2,15 @@ const RandomizationService = require('../services/randomization-service');
 const SkillType = require('../typings/skill-type');
 
 module.exports = class ResilienceSkill {
-  // chance to use the skill (number between 0 and 100)
-  chance = 20;
-  // type of skill (attacking or defensive)
-  type = SkillType.DEFENSE;
-  // flag set to true if the skill was used last turn
-  usedLastTurn = false;
+
+  constructor() {
+    // chance to use the skill (number between 0 and 100)
+    this.chance = 20;
+    // type of skill (attacking or defensive)
+    this.type = SkillType.DEFENSE;
+    // flag set to true if the skill was used last turn
+    this.usedLastTurn = false;
+  }
 
   /**
    * Use skill

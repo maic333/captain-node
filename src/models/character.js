@@ -2,25 +2,6 @@ const RandomizationService = require('../services/randomization-service');
 const SkillType = require('../typings/skill-type');
 
 module.exports = class Character {
-  // character name
-  name;
-
-  // stats ranges
-  healthRange;
-  strengthRange;
-  defenseRange;
-  speedRange;
-  luckRange;
-
-  // stats
-  health;
-  strength;
-  defense;
-  speed;
-  luck;
-
-  // list of skills
-  skills = [];
 
   /**
    * Define a new character
@@ -96,7 +77,13 @@ module.exports = class Character {
       return;
     }
 
-    // #TODO use defensive skills
+    // use all defensive skills
+    this.skills
+      .filter((skill) => skill.type === SkillType.DEFENSE)
+      .forEach((skill) => {
+        // keep the new damage
+        damage = skill.use(this, damage);
+      });
 
     // get hit
     this.health = Math.max(0, (this.health - damage));

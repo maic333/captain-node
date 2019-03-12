@@ -1,6 +1,6 @@
-const Character = require('./src/models/character');
-const CriticalStrikeSkill = require('./src/models/critical-strike.skill');
-const ResilienceSkill = require('./src/models/resilience.skill');
+const Character = require('../models/character');
+const CriticalStrikeSkill = require('../models/critical-strike.skill');
+const ResilienceSkill = require('../models/resilience.skill');
 
 // create hero character
 module.exports = new Character(
