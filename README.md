@@ -1,4 +1,6 @@
-# Captain Node
+# Captain Node game
+
+> CLI game that simulates a fight between 2 characters with randomly generated stats
 
 ## Installation
 
